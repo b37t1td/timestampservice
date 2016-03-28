@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/b37t1td/timestampservice/issues"
   },
-  "homepage": "https://github.com/b37t1td/timestampservice#readme"
+  "homepage": "https://github.com/b37t1td/timestampservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
