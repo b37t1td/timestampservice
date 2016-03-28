@@ -2,6 +2,8 @@
 var express = require('express');
 var app = express();
 
+var port = process.env.PORT || 8081;
+
 var monthes = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
  'August', 'September', 'October', 'November', 'December'];
 
@@ -17,13 +19,13 @@ var parseTime = function(url) {
     time = new Date(decodeURIComponent(url));
   }
   var unix = null;
-  var natural = null; 
+  var natural = null;
 
   if (time.getMonth()) {
     unix = Math.floor(time.getTime() / 1000);
     natural = monthes[time.getMonth()] + ' ' + pad(time.getDate()) + ', ' + time.getFullYear();
   }
-  
+
   return {
     unix : unix,
     natural : natural
@@ -37,4 +39,6 @@ app.get('/*', function(req, res) {
 });
 
 
-app.listen(8080);
+app.listen(port, function() {
+  console.log('Application started on :' + port);
+});
