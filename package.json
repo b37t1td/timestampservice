@@ -1,0 +1,19 @@
+{
+  "name": "timestampservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b37t1td/timestampservice.git"
+  },
+  "author": "Svetlana Linuxenko <linuxenko@yahoo.com> (http://www.linuxenko.pro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b37t1td/timestampservice/issues"
+  },
+  "homepage": "https://github.com/b37t1td/timestampservice#readme"
+}
